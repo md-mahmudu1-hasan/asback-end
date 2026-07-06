@@ -73,7 +73,7 @@ async function run() {
         await transporter.sendMail({
           from: process.env.EMAIL_USER,
           to: email,
-          subject: "Your Email Verification Code – AS WEAR CO.",
+          subject: "Your Email Verification Code – AS EVERYTHING SHOP",
           html: `<div style="max-width:600px;margin:auto;padding:24px;font-family:Arial,sans-serif;background:#0f172a;border-radius:12px;border:1px solid #1f2937;">
 
   <!-- Header -->
@@ -89,7 +89,7 @@ async function run() {
   <!-- Body -->
   <p style="font-size:15px;color:#e5e7eb;line-height:1.6;">
     Hello,<br><br>
-    Thank you for choosing <strong style="color:#facc15;">AS WEAR CO. Buy</strong>!
+    Thank you for choosing <strong style="color:#facc15;">AS EVERYTHING SHOP Buy</strong>!
   </p>
 
   <p style="font-size:15px;color:#e5e7eb;">
@@ -144,7 +144,7 @@ async function run() {
 
   <p style="font-size:13px;color:#9ca3af;">
     Warm regards,<br>
-    <strong style="color:#facc15;">AS WEAR CO. Team</strong>
+    <strong style="color:#facc15;">AS EVERYTHING SHOP Team</strong>
   </p>
 
 </div>
@@ -248,8 +248,8 @@ app.post("/order-confirm", async (req, res) => {
         await transporter.sendMail({
           from: process.env.EMAIL_USER,
           to: userEmail,
-          subject: "🛒 Order Confirmed - AS WEAR CO.",
-          html: `<div style="max-width:600px;margin:auto;padding:24px;font-family:Arial,sans-serif;background:#0f172a;border-radius:12px;border:1px solid #1f2937;color:#f9fafb;"> <!-- Header --> <div style="text-align:center;margin-bottom:20px;"> <h2 style="margin:0;color:#facc15;"> AS <span style="color:#fde047;">WEAR CO.</span> </h2> <p style="margin:6px 0 0;font-size:13px;color:#9ca3af;"> Your Trusted Online Marketplace </p> </div> <!-- Greeting --> <p style="font-size:15px;color:#e5e7eb;line-height:1.6;"> Hello <strong>${userName}</strong>,<br><br> আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। নিচে সম্পূর্ণ অর্ডার তথ্য দেওয়া হলো: </p> <!-- Order Info --> <div style="background:#111827;padding:16px;border-radius:8px;margin:16px 0;"> <p style="margin:6px 0;font-size:14px;"><strong>Email:</strong> ${userEmail}</p> <p style="margin:6px 0;font-size:14px;"><strong>Phone:</strong> ${phone}</p> <p style="margin:6px 0;font-size:14px;"><strong>Delivery Address:</strong><br>${address}</p> <p style="margin:6px 0;font-size:14px;"><strong>Payment Method:</strong> ${paymentMethod}</p> <p style="margin:6px 0;font-size:14px;"><strong>Transaction ID:</strong> ${transactionId}</p> </div> <!-- Products --> <h3 style="margin-top:20px;color:#fde047;">🛒 Ordered Products</h3> <ul style="padding-left:18px;color:#e5e7eb;font-size:14px;line-height:1.6;"> ${productList} </ul> <!-- Total --> <div style="margin:20px 0;padding:14px;background:#1f2937;border-radius:8px;"> <p style="margin:0;font-size:16px;color:#facc15;"> <strong>Total Amount:</strong> ₹${total} </p> </div> <!-- Delivery Info --> <div style="margin:24px 0;padding:16px;background:#111827;border-left:4px solid #facc15;border-radius:6px;"> <p style="margin:0;font-size:14px;color:#e5e7eb;line-height:1.6;"> ⚠️ যদি আপনার <strong>Transaction ID</strong> সঠিক থাকে, তাহলে আপনার অর্ডার ২-৩ দিনের মধ্যে ডেলিভারি করা হবে।<br><br> ❌ যদি Transaction ID ভুল থাকে, তাহলে অর্ডারটি <strong>reject</strong> করা হবে এবং আপনি সেটি <strong>My Orders</strong> সেকশনে দেখতে পারবেন। </p> </div> <!-- Footer --> <hr style="border:none;border-top:1px solid #1f2937;margin:24px 0;"> <p style="font-size:13px;color:#9ca3af;text-align:center;"> ধন্যবাদ আমাদের সাথে থাকার জন্য।<br> <strong style="color:#facc15;">AS WEAR CO. Team</strong> </p> </div>
+          subject: "🛒 Order Confirmed - AS EVERYTHING SHOP",
+          html: `<div style="max-width:600px;margin:auto;padding:24px;font-family:Arial,sans-serif;background:#0f172a;border-radius:12px;border:1px solid #1f2937;color:#f9fafb;"> <!-- Header --> <div style="text-align:center;margin-bottom:20px;"> <h2 style="margin:0;color:#facc15;"> AS <span style="color:#fde047;">WEAR CO.</span> </h2> <p style="margin:6px 0 0;font-size:13px;color:#9ca3af;"> Your Trusted Online Marketplace </p> </div> <!-- Greeting --> <p style="font-size:15px;color:#e5e7eb;line-height:1.6;"> Hello <strong>${userName}</strong>,<br><br> আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। নিচে সম্পূর্ণ অর্ডার তথ্য দেওয়া হলো: </p> <!-- Order Info --> <div style="background:#111827;padding:16px;border-radius:8px;margin:16px 0;"> <p style="margin:6px 0;font-size:14px;"><strong>Email:</strong> ${userEmail}</p> <p style="margin:6px 0;font-size:14px;"><strong>Phone:</strong> ${phone}</p> <p style="margin:6px 0;font-size:14px;"><strong>Delivery Address:</strong><br>${address}</p> <p style="margin:6px 0;font-size:14px;"><strong>Payment Method:</strong> ${paymentMethod}</p> <p style="margin:6px 0;font-size:14px;"><strong>Transaction ID:</strong> ${transactionId}</p> </div> <!-- Products --> <h3 style="margin-top:20px;color:#fde047;">🛒 Ordered Products</h3> <ul style="padding-left:18px;color:#e5e7eb;font-size:14px;line-height:1.6;"> ${productList} </ul> <!-- Total --> <div style="margin:20px 0;padding:14px;background:#1f2937;border-radius:8px;"> <p style="margin:0;font-size:16px;color:#facc15;"> <strong>Total Amount:</strong> ₹${total} </p> </div> <!-- Delivery Info --> <div style="margin:24px 0;padding:16px;background:#111827;border-left:4px solid #facc15;border-radius:6px;"> <p style="margin:0;font-size:14px;color:#e5e7eb;line-height:1.6;"> ⚠️ যদি আপনার <strong>Transaction ID</strong> সঠিক থাকে, তাহলে আপনার অর্ডার ২-৩ দিনের মধ্যে ডেলিভারি করা হবে।<br><br> ❌ যদি Transaction ID ভুল থাকে, তাহলে অর্ডারটি <strong>reject</strong> করা হবে এবং আপনি সেটি <strong>My Orders</strong> সেকশনে দেখতে পারবেন। </p> </div> <!-- Footer --> <hr style="border:none;border-top:1px solid #1f2937;margin:24px 0;"> <p style="font-size:13px;color:#9ca3af;text-align:center;"> ধন্যবাদ আমাদের সাথে থাকার জন্য।<br> <strong style="color:#facc15;">AS EVERYTHING SHOP Team</strong> </p> </div>
 `,
         });
 
@@ -275,7 +275,7 @@ app.post("/order-confirm", async (req, res) => {
         await transporter.sendMail({
           from: process.env.EMAIL_USER,
           to: process.env.EMAIL_USER, // admin gmail
-          subject: "📦 New Order Received - AS WEAR CO.",
+          subject: "📦 New Order Received - AS EVERYTHING SHOP",
           html: `<div style="max-width:600px;margin:auto;font-family:Arial,sans-serif;background:#f9f9f9;padding:20px;border-radius:8px">
 
   <h2 style="text-align:center;color:#2c3e50">
